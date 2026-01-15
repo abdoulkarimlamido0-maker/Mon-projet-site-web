@@ -1,4 +1,4 @@
-
+~@media (max-width: 600 px) {
 body {
     font-family: "Segoe UI", Arial, sans-serif;
     background-color: #f4f6f8;
@@ -92,4 +92,5 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
 }
