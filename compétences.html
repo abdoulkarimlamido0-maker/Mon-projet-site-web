@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Mes Compétences Techniques</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f6f6f6;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 30px auto;
+            background: #fff;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .competence-section {
+            margin-bottom: 25px;
+        }
+        .competence-section h2 {
+            font-size: 1.3em;
+            color: #2980b9;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+            margin-bottom: 12px;
+        }
+        .competence-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 13px;
+        }
+        .competence-item {
+            background: #ecf0f1;
+            border-radius: 6px;
+            padding: 9px 18px;
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Mes Compétences Techniques</h1>
+        <div class="bod">
+            <label for="menu-deroulant">Menu :</label>
+            <select id="menu-deroulant" onchange="if(this.value)window.location.href=this.value">
+                <option value="">-- Choisissez une page --</option>
+                <option value="index.html">Acceuil</option>
+                <option value="CV.html">A propos de moi</option>
+                <option value="Services.html">Services</option>
+                <option value="Portfolio.html">Portfolio</option>
+                <option value="Compétences.html">Compétences</option>
+                <option value="Agenda.html">Mon agenda</option>
+                <option value="Contact.html">Contact</option>
+            </select>
+        </div>
+        <div class="competence-section">
+            <h2>Langages de Programmation</h2>
+            <div class="competence-list">
+                <div class="competence-item">Python</div>
+                <div class="competence-item">Java</div>
+                <div class="competence-item">C/C++</div>
+                <div class="competence-item">JavaScript</div>
+                <div class="competence-item">PHP</div>
+                <div class="competence-item">SQL</div>
+                <div class="competence-item">Bash</div>
+                <div class="competence-item">HTML/CSS</div>
+            </div>
+        </div>
+
+        <div class="competence-section">
+            <h2>Frameworks & Bibliothèques</h2>
+            <div class="competence-list">
+                <div class="competence-item">Django</div>
+                <div class="competence-item">Flask</div>
+                <div class="competence-item">React</div>
+                <div class="competence-item">Angular</div>
+                <div class="competence-item">Bootstrap</div>
+                <div class="competence-item">Node.js</div>
+                <div class="competence-item">Spring</div>
+                <div class="competence-item">jQuery</div>
+            </div>
+        </div>
+
+        <div class="competence-section">
+            <h2>Outils</h2>
+            <div class="competence-list">
+                <div class="competence-item">Git & GitHub</div>
+                <div class="competence-item">VS Code</div>
+                <div class="competence-item">Docker</div>
+                <div class="competence-item">Linux</div>
+                <div class="competence-item">Figma</div>
+                <div class="competence-item">Photoshop</div>
+                <div class="competence-item">Jira</div>
+                <div class="competence-item">Postman</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

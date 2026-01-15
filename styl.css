@@ -1,0 +1,146 @@
+*{
+    font-family:Arial, Helvetica, sans-serif;
+}
+.loi{
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    border: 40px solid black;
+    
+    
+}
+table.menu{
+    border: 3px solid black;
+    border-collapse: collapse;
+}
+body { background: rgba(235, 195, 195, 0.8) !important; }
+h1.para { color: #0b5ed7 !important; }
+.image-container{
+    text-align: center;
+}
+.mon-image{
+    width: 600px;
+    height: auto;
+}
+.bod{
+    background-color: white;
+    color: rgba(0, 0, 0, 0.8);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+
+}
+.lol{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:blue;
+}
+#menu-deroulant{
+    padding: 6px;
+    border-radius: 4px;
+    font-size: 16px;
+}
+label{
+    margin-right: 8px;
+}
+.navi{
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    padding: 15px;
+    list-style-type: none;
+    text-align: center;
+    margin: 20px;
+}
+.liens{
+    display: inline;
+    width: 18px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+body {
+  font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+}
+nav{
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  text-align: center;
+  padding: 15px;
+  margin: 20px;
+}
+nav ul, .menu-nav {
+  list-style: none;
+  margin: 0 12px;
+}
+nav ul li a, .liens {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 6px 12px;
+}
+nav ul.menu-nav li {
+  display: inline-block;
+  display: flexbox;
+}
+#introduction{
+    text-align: center;
+    background-color: #305e99;
+    color: #ffffff;
+    padding: 50px;
+}
+#mon-image{
+    width: 180px;
+    height: 180px;
+}
+.sects{
+    margin: auto;
+    padding: 50px;
+    text-align: center;
+    overflow: auto;
+}
+#titre{
+    text-align: center;
+    color: #305e99;
+    margin: 40px;
+    font-size: 32px;
+}
+.service{
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 296px;
+    height: 200px;
+    margin: 20px;
+    padding: 20px;
+    float: left;    
+}
+.service{
+  display: inline-flexbox;
+}
+.titres{
+  font-size: 24px;
+  color: #ff9f19;
+}
+.parag{
+  font-size: 16px;
+  color: #333333;
+}parag{
+  color: #666666;
+  font-size: 16px;
+  padding: 1.6;
+  border: ;
+}
+footer{
+    background-color: #696969;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    margin: 20px;
+}
+.deves{
+    display: flexbox;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}

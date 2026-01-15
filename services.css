@@ -1,0 +1,47 @@
+#corps{
+    font-size: 16px;
+    background-color: white;
+    color: rgba(0, 0, 0, 0.8);
+    font-family: Arial, Helvetica, sans-serif;
+}
+#titr{
+    font-size: 28px;
+    background-color: #ff9f19;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 15px 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.parag{
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    margin: 15px 20px;
+    line-height: 1.8;
+}
+.navig{
+    list-style-type: none;
+    padding: 0;
+    display: inline;
+}
+.linav{
+    text-decoration: none;
+    color: #305e99;
+    margin-right: 20px;
+}
+.linav a:hover{
+    text-decoration: underline;
+    color: #305e99;
+}
+.sects{
+    font-size: 28px;
+    color: #ff9f19;
+    font-weight: bold;
+}
+.sousect{
+    margin: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    width: 90%;
+}

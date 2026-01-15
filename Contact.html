@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon site web</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <style>
+        h1{
+            text-align: center;
+            font-weight: bold;
+        }
+        form{
+            text-align: center;
+        }
+        .champ{
+            width: 300px;
+            height: 40px;
+
+        }
+    </style>
+    </head>
+    <body>
+        <div class="bod">
+            <label for="menu-deroulant">Menu :</label>
+            <select id="menu-deroulant" onchange="if(this.value)window.location.href=this.value">
+                <option value="">-- Choisissez une page --</option>
+                <option value="index.html">Acceuil</option>
+                <option value="CV.html">A propos de moi</option>
+                <option value="Services.html">Services</option>
+                <option value="Portfolio.html">Portfolio</option>
+                <option value="Compétences.html">Compétences</option>
+                <option value="Agenda.html">Mon agenda</option>
+                <option value="Contact.html">Contact</option>
+            </select>
+        </div>
+        <h1>Formulaire de contact</h1>
+        <form class="formu" action="Essai formulaire.PHP" method="post">
+            <label class="etq" for="pren">Prénom</label><br>
+            <input class="sais" type="text" id="pren" placeholder="saisir votre prenom svp" required="true">
+            <br>
+            <label class="etq" for="nom">Nom</label><br>
+            <input class="sais" type="text" id="nom" placeholder="saisir votre nom svp" required="true">
+            <br>
+            <label class="etq" for="mail">Email</label><br>
+            <input class="sais" type="email" id="mail" placeholder="saisir votre mail svp" required="true">
+            <br>
+            <label class="etq" for="pren">Sujet</label><br>
+            <input class="sais" type="text" id="sujet" placeholder="le sujet de votre message svp" required="true">
+            <br>
+            <br>
+            <label class="etq" for="msg">Message:</label><textarea class="sais" name="" id="msg"></textarea><br>
+            <br>
+            <input class="bout" type="submit" id="sub">
+            <br>
+        </form>
+    </body>
+</html>

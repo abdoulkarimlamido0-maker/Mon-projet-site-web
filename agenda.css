@@ -1,0 +1,95 @@
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #f4f6f8;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+.bod {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+select {
+    padding: 6px 10px;
+    border-radius: 6px;
+    border: 1px solid #aaa;
+    cursor: pointer;
+}
+
+.titre {
+    text-align: center;
+    color: #1f4ed8;
+    margin-bottom: 10px;
+}
+
+
+p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.capt {
+    caption-side: top;
+    padding: 10px;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #444;
+}
+
+/* En-têtes */
+th {
+    background-color: #1f4ed8;
+    color: white;
+    padding: 12px;
+    text-align: left;
+}
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9fafb;
+}
+
+.details {
+    white-space: pre-line;
+    font-style: italic;
+    color: #555;
+}
+
+.ligne1 th {
+    text-transform: uppercase;
+    font-size: 0.9em;
+}
+
+hr {
+    margin: 30px 0;
+}
+
+a {
+    color: #1f4ed8;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}

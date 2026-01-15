@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon agenda</title>
+    <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    table { width: 100%; border-collapse: collapse; margin-top: 12px; }
+    caption { font-weight: bold; margin-bottom: 8px; text-align: left; }
+    th, td { border: 1px solid #444; padding: 8px; vertical-align: top; }
+    th { background: #eee; text-align: left; }
+    tr:nth-child(even) td { background: #fafafa; }
+    .details { white-space: pre-line; } /* permet les retours à la ligne */
+    </style>
+    <link rel="stylesheet" href="agenda.css">
+</head>
+<body>
+    <div class="bod">
+        <label for="menu-deroulant">Menu :</label>
+        <select id="menu-deroulant" onchange="if(this.value)window.location.href=this.value">
+            <option value="">-- Choisissez une page --</option>
+            <option value="index.html">Acceuil</option>
+            <option value="CV.html">A propos de moi</option>
+            <option value="Services.html">Services</option>
+            <option value="Portfolio.html">Portfolio</option>
+            <option value="Compétences.html">Compétences</option>
+            <option value="Agenda.html">Mon agenda</option>
+            <option value="Contact.html">Contact</option>
+        </select>
+    </div>
+
+
+    <h1 class="titre">Mon agenda</h1>
+    <p>Voici mes événements à venir :</p>
+
+    <table>
+        <caption class="capt">Agenda des événements</caption>
+        <thead>
+            <tr class="ligne1">
+                <th>Date</th>
+                <th>Événement</th>
+                <th colspan="2">Détails</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="ligne2">
+                <td rowspan="2">2024-10-15</td>
+                <td>Atelier Machine Learning</td>
+                <td class="details">Lieu : Salle A</td>
+                <td>Heure : 10h00 - 12h00</td>
+            </tr>
+            <tr>
+                <td>Session de Q&A</td>
+                <td>Discussion ouverte après l'atelier.</td>
+                <td class="details"></td>
+            </tr>
+            <tr>
+                <td>2024-10-22</td>
+                <td>Conférence sur la Cybersécurité</td>
+                <td class="details">Lieu : Auditorium B</td>
+                <td>Heure : 14h00 - 16h00</td>
+            </tr>
+            <tr>
+                <td rowspan="2">2024-11-05</td>
+                <td>Formation en Développement Web</td>
+                <td class="details">Lieu : Salle C</td>
+                <td>Heure : 09h00 - 17h00</td>
+            </tr>
+            <tr>
+                <td>Évaluation de fin de formation</td>
+                <td class="details" colspan="2">Test pratique sur les concepts abordés pendant la formation.</td>
+            </tr>
+            <tr>
+                <td>2024-11-10</td>
+                <td>Webinaire sur la Data Science</td>
+                <td class="details">Mode : En ligne</td>
+                <td>Heure : 15h00 - 16h30</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+    <p>Pour toute question ou demande, information vous pouvez me contacter à l'adresse suivante:<a href="mail to:abdoulkarimlamido@gmail.com">abdoulkarimlamido0@gmail.com</a></p>
+</body>
+</html>

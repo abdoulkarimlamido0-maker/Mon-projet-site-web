@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon site web</title>
+    <link rel="stylesheet" href="portfolio.css">
+    </head>
+    <body>
+        <div class="container">
+        <h1>Mes Compétences Techniques</h1>
+        <div class="bod">
+            <label for="menu-deroulant">Menu :</label>
+            <select id="menu-deroulant" onchange="if(this.value)window.location.href=this.value">
+                <option value="">-- Choisissez une page --</option>
+                <option value="index.html">Acceuil</option>
+                <option value="CV.html">A propos de moi</option>
+                <option value="Services.html">Services</option>
+                <option value="Portfolio.html">Portfolio</option>
+                <option value="Compétences.html">Compétences</option>
+                <option value="Agenda.html">Mon agenda</option>
+                <option value="Contact.html">Contact</option>
+            </select>
+        </div>
+        <h1>Mon Portfolio</h1>
+        <p>Voici une sélection de mes projets récents.Chaque projet réflète mon expertise dans divers domaines de l'informatique,du développement web à la data science en passant par la cybersécurité</p>
+        <table border="1" cellspacing="8" cellpadding="5" style="border-collapse: collapse;" width="80%" align="center">
+            <tr id="tete">
+                <td><strong>Projets</strong></td>
+                <td><strong>Description</strong></td>
+                <td class="tech"><strong>Technologies</strong></td>
+                <td><strong>Images</strong></td>
+                <td><strong>Liens</strong></td>
+            </tr>
+            <tr class="pair">
+                <td class="cel"> Site webs vitrines</td>
+                <td class="cel">Création d'un site web vitrine pour une entreprise locale, optimisé pour le SEO et compatiblemobile</td>
+                <td class="tech">HTML,CSS,Java Script</td>
+                <td class="cel"><img src="vitre.jpg" width="100%"></td>
+                <td class="cel"><a href="">voir le projet</a></td>
+            </tr>
+            <tr class="impair">
+                <td class="cel">Application de gestion</td>
+                <td class="cel">Dévéloppement d'une application de gestion pour automatiser le processus interne d'une PME</td>
+                <td class="tech">Python,Django,PostgreSQL</td>
+                <td class="cel"><img src="imagesiteweb.jpg" width="100%"></td> 
+                <td class="cel"><a href="">voir le projet</a></td>  
+            </tr>
+            <tr class="pair">
+                <td class="cel">Plateforme E-commerce</td>
+                <td class="cel">Développement d'une plateforme e-commerce complète avec gestion de panier, paiement en ligne, et interface admin</td>
+                <td class="tech">PHP,Laravel,MySQL</td>
+                <td class="cel"><img src="ecom.jpg" width="100%"></td> 
+                <td class="cel"><a href="">voir le projet</a></td>  
+            </tr>
+            <tr class="impair">
+                <td class="cel">Projet Machine Learning-
+                    Classification d'image
+                </td>
+                <td class="cel">Développement d'un modèle de machine learning pour classifier des images en différentes catégories(chien,chat,etc...)
+                    Utilisation de réseaux neurones convolutionnels(CNN)
+                </td>
+                <td class="tech">Python,Tensorflow,Keras</td>
+                <td class="cel"><img src="dev.jpg" width="100%"></td> 
+                <td class="cel"><a href="">voir le projet</a></td>  
+            </tr>
+        </table>
+        <hr>
+        <p>Vous pouvez consulter d'autre</p>
+    </body>
+</html>

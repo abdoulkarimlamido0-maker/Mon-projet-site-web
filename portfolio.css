@@ -1,0 +1,49 @@
+#tete{
+    background-color: #305e99;
+    color: #fff;
+    font-size: 20px;
+    text-align: left;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+}
+.pair{
+    background-color: #f2f2f2;
+}
+.impair{
+    background-color: #e0e0e0;
+}
+.tech{
+    background-color: #ff9f19;
+}
+.tech :hover{
+    background-color: #e0e0e0;
+    transition: background-color 0.2s;
+}
+.cel{
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+#formu{
+    width: 600px;
+    margin: 20px;
+    background-color: #f9f9f9;
+    border-radius: 1px;
+}
+.etq{
+    font-weight: bold;
+    margin: 10px;
+}
+.sais{
+    width: 100%;
+    border: 1px solid gray;
+    padding: 10px;
+}
+.bout{
+    background-color: #305e99;
+    color: white;
+    border-radius: 8px;
+    width: 100%;
+}
+.bout:hover{
+    background-color: #1f4778;
+}
