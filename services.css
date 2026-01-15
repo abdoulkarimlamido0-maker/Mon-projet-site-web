@@ -1,3 +1,4 @@
+~@media (max-width: 600 px) {
 #corps{
     font-size: 16px;
     background-color: white;
@@ -44,4 +45,5 @@
     background-color: #f9f9f9;
     border-radius: 8px;
     width: 90%;
+}
 }
