@@ -1,3 +1,4 @@
+~@media (max-width: 600 px) {
 #tete{
     background-color: #305e99;
     color: #fff;
@@ -46,4 +47,6 @@
 }
 .bout:hover{
     background-color: #1f4778;
+
+}
 }
