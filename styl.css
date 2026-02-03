@@ -146,5 +146,46 @@ footer{
     gap: 20px;
 
 }
+/* Conteneur des services */
+.deves {
+    display: flex;
+    flex-wrap: wrap; /* Permet de passer à la ligne suivante */
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Chaque carte de service */
+.service {
+    flex: 1 1 300px; /* Prend au moins 300px, sinon passe à la ligne */
+    max-width: 100%; /* Ne dépasse jamais du téléphone */
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+#mon-image {
+    max-width: 100%;  /* S'adapte à la largeur du téléphone */
+    height: auto;     /* Garde les proportions */
+    display: block;
+    margin: 0 auto;   /* Centre l'image */
+}
+/* Style par défaut pour le menu */
+.menu-nav {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    justify-content: space-around;
+}
+
+/* Adaptation pour mobile */
+@media (max-width: 600px) {
+    .menu-nav {
+        flex-direction: column; /* Aligne les liens verticalement */
+        align-items: center;
+    }
+    
+    .menu-nav li {
+        margin: 10px 0;
+    }
+}
+
 
 
