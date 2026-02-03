@@ -42,6 +42,46 @@
 
 }
 .champ { width: 300px; } /* C'est fixe, donc risqué sur mobile */
+.scroll-mobile {
+    width: 100%;
+    overflow-x: auto; /* Ajoute une barre de défilement horizontale sur mobile */
+}
+@media screen and (max-width: 768px) {
+    /* On force le tableau à ne plus se comporter comme un tableau */
+    table, thead, tbody, th, td, tr {
+        display: block;
+        width: 100% !important;
+    }
+
+    /* On cache la ligne d'en-tête (Projets, Description, etc.) */
+    #tete {
+        display: none;
+    }
+
+    /* Chaque ligne devient une "carte" de projet */
+    tr {
+        margin-bottom: 2rem;
+        border: 1px solid #ccc;
+        padding: 10px;
+        background: #fff;
+    }
+
+    /* On stylise les cellules pour qu'elles se suivent verticalement */
+    td {
+        border: none !important;
+        padding: 5px 0 !important;
+        text-align: left !important;
+    }
+
+    /* On s'assure que les images ne débordent pas */
+    td img {
+        width: 100%;
+        max-width: 300px; /* Pour éviter qu'elles soient géantes */
+        height: auto;
+        display: block;
+        margin: 10px 0;
+    }
+}
 
 
 
