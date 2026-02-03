@@ -87,3 +87,8 @@ a:hover {
     text-decoration: underline;
 }
 }
+.table-container {
+    width: 100%;
+    overflow-x: auto; /* Active le défilement horizontal si besoin */
+}
+
