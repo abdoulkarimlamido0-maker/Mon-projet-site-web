@@ -1,24 +1,25 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="utf-8">
         <title>Mon CV en ligne</title>
         <link rel="stylesheet" href="CV.css">
     </head>
-    <div class="bod">
-        <label for="menu-deroulant">Menu :</label>
-        <select id="menu-deroulant" onchange="if(this.value)window.location.href=this.value">
-        <option value="">-- Choisissez une page --</option>
-        <option value="index.html">Acceuil</option>
-        <option value="CV.html">A propos de moi</option>
-        <option value="Services.html">Services</option>
-        <option value="Portfolio.html">Portfolio</option>
-        <option value="Compétences.html">Compétences</option>
-        <option value="Agenda.html">Mon agenda</option>
-        <option value="Contact.html">Contact</option>
-        </select>
-    </div>
-
+    <body>
+        <div class="bod">
+            <label for="menu-deroulant">Menu :</label>
+            <select id="menu-deroulant" onchange="if(this.value)window.location.href=this.value">
+            <option value="">-- Choisissez une page --</option>
+            <option value="index.html">Acceuil</option>
+            <option value="CV.html">A propos de moi</option>
+            <option value="Services.html">Services</option>
+            <option value="Portfolio.html">Portfolio</option>
+            <option value="Compétences.html">Compétences</option>
+            <option value="Agenda.html">Mon agenda</option>
+            <option value="Contact.html">Contact</option>
+            </select>
+        </div>
         <img src="ma_phot.jpg" alt="ma_photo" width="135px" height="180px">
         <h1>Abdoul Karim Harouna Lamido Moumouni</h1>
         <h2 class="classes">Informations personnelles</h2>
@@ -61,4 +62,5 @@
                 <li>Voyager</li>
         </ol>
     </body>
+
 </html>
