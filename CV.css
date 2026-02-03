@@ -16,4 +16,32 @@ body{
 
 }
 }
+/* Dans votre fichier CV.css */
+p, li, h1 {
+    overflow-wrap: break-word; /* Coupe les mots trop longs si besoin */
+    word-wrap: break-word;
+}
+img {
+    max-width: 100%; /* L'image ne dépassera jamais du téléphone */
+    height: auto;
+    display: block;
+    margin: 10px auto; /* Centre l'image */
+    border-radius: 8px; /* Petit bonus esthétique */
+}
+/* Style global pour mobile et PC */
+body {
+    padding: 15px; /* Évite que le texte touche les bords de l'écran */
+    line-height: 1.6; /* Améliore la lisibilité */
+}
+
+select {
+    width: 100%; /* Le menu prend toute la largeur sur mobile */
+    padding: 10px;
+    font-size: 16px; /* Évite le zoom auto sur iPhone */
+}
+
+h1 {
+    font-size: 1.5rem; /* Réduit un peu la taille du nom sur mobile */
+    text-align: center;
+}
 
