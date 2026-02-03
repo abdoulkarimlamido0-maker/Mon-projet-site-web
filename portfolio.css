@@ -41,5 +41,7 @@
     background-color: #1f4778;
 
 }
+.champ { width: 300px; } /* C'est fixe, donc risqué sur mobile */
+
 
 
