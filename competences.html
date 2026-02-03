@@ -2,24 +2,9 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mes Compétences Techniques</title>
     <style>
-        @media (max-width: 768px) {
-    .container {
-        margin: 10px; /* Réduit l'espace autour du bloc blanc */
-        padding: 15px; /* Réduit l'espace interne */
-        width: auto;   /* Permet au container de s'adapter */
-    }
-    
-
-    h1 {
-        font-size: 1.5rem; /* Titre un peu plus petit sur mobile */
-    }
-
-    .competence-list {
-        justify-content: center; /* Centre les badges sur mobile */
-    }
-}
         body {
             font-family: Arial, sans-serif;
             background: #f6f6f6;
@@ -28,16 +13,25 @@
         }
         .container {
             max-width: 800px;
-            margin: 30px auto;
+            margin: 20px auto;
             background: #fff;
             border-radius: 10px;
-            padding: 30px;
+            padding: 20px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.08);
         }
         h1 {
             color: #2c3e50;
             text-align: center;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
+        }
+        #menu-deroulant {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 25px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            background-color: #fff;
         }
         .competence-section {
             margin-bottom: 25px;
@@ -54,52 +48,45 @@
             flex-wrap: wrap;
             gap: 13px;
         }
-        .competence-item:hover {
-    background: #2980b9;
-    color: white;
-    transition: 0.3s;
-    transform: translateY(-2px); /* Soulève légèrement le badge */
-}
         .competence-item {
             background: #ecf0f1;
             border-radius: 6px;
             padding: 9px 18px;
             font-size: 1em;
+            transition: 0.3s;
         }
-        #menu-deroulant {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 25px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px; /* Taille idéale pour éviter le zoom automatique sur iPhone */
-    background-color: #fff;
-}
+        .competence-item:hover {
+            background: #2980b9;
+            color: white;
+            transform: translateY(-2px);
+        }
 
-.bod label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: bold;
-    color: #2c3e50;
-}
+        /* Responsive */
+        @media (max-width: 768px) {
+            .container { margin: 10px; padding: 15px; }
+            h1 { font-size: 1.5rem; }
+            .competence-list { justify-content: center; }
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Mes Compétences Techniques</h1>
         <div class="bod">
-            <label for="menu-deroulant">Menu :</label>
+            <label for="menu-deroulant"><strong>Aller vers :</strong></label>
             <select id="menu-deroulant" onchange="if(this.value)window.location.href=this.value">
                 <option value="">-- Choisissez une page --</option>
-                <option value="index.html">Acceuil</option>
-                <option value="CV.html">A propos de moi</option>
+                <option value="index.html">Accueil</option>
+                <option value="CV.html">À propos de moi</option>
                 <option value="Services.html">Services</option>
                 <option value="Portfolio.html">Portfolio</option>
-                <option value="Compétences.html">Compétences</option>
+                <option value="competences.html">Compétences</option>
                 <option value="Agenda.html">Mon agenda</option>
                 <option value="Contact.html">Contact</option>
             </select>
         </div>
+
+        <h1>Mes Compétences Techniques</h1>
+
         <div class="competence-section">
             <h2>Langages de Programmation</h2>
             <div class="competence-list">
@@ -109,39 +96,20 @@
                 <div class="competence-item">JavaScript</div>
                 <div class="competence-item">PHP</div>
                 <div class="competence-item">SQL</div>
-                <div class="competence-item">Bash</div>
                 <div class="competence-item">HTML/CSS</div>
             </div>
         </div>
 
         <div class="competence-section">
-            <h2>Frameworks & Bibliothèques</h2>
+            <h2>Frameworks & Outils</h2>
             <div class="competence-list">
                 <div class="competence-item">Django</div>
-                <div class="competence-item">Flask</div>
                 <div class="competence-item">React</div>
-                <div class="competence-item">Angular</div>
-                <div class="competence-item">Bootstrap</div>
-                <div class="competence-item">Node.js</div>
-                <div class="competence-item">Spring</div>
-                <div class="competence-item">jQuery</div>
-            </div>
-        </div>
-
-        <div class="competence-section">
-            <h2>Outils</h2>
-            <div class="competence-list">
-                <div class="competence-item">Git & GitHub</div>
-                <div class="competence-item">VS Code</div>
                 <div class="competence-item">Docker</div>
-                <div class="competence-item">Linux</div>
-                <div class="competence-item">Figma</div>
-                <div class="competence-item">Photoshop</div>
-                <div class="competence-item">Jira</div>
-                <div class="competence-item">Postman</div>
+                <div class="competence-item">Git & GitHub</div>
             </div>
         </div>
     </div>
 </body>
-
 </html>
+
