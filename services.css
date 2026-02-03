@@ -46,5 +46,71 @@
     border-radius: 8px;
     width: 90%;
 }
+/* Style de base pour la navigation */
+.navig {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap; /* Permet aux liens de passer à la ligne sur mobile */
+    gap: 10px;
+    justify-content: center;
+}
+
+.linav {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #f4f4f4;
+    text-decoration: none;
+    border-radius: 5px;
+    color: #333;
+    font-size: 14px;
+}
+
+/* Sur mobile, on peut les mettre en pleine largeur */
+@media (max-width: 600px) {
+    .linav {
+        width: 100%;
+        text-align: center;
+    }
+}
+/* Conteneur de chaque service */
+.sousect {
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-left: 4px solid #007bff; /* Ajoute une petite barre colorée pour le style */
+}
+
+/* Ajustement des textes */
+.parag {
+    line-height: 1.6;
+    font-size: 16px;
+    color: #444;
+}
+
+/* Empêcher les titres de déborder */
+h2.sects {
+    font-size: 1.4rem;
+    word-wrap: break-word;
+}
+@media (max-width: 600px) {
+    ol {
+        padding-left: 20px; /* Réduit la marge gauche de la liste principale */
+    }
+    
+    .sousect ul {
+        padding-left: 15px; /* Réduit la marge des sous-listes */
+    }
+    
+    .sousect ul li {
+        margin-bottom: 8px; /* Espace les points de la liste pour faciliter la lecture */
+    }
+}
+#menu-deroulant {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+}
+
 
 
