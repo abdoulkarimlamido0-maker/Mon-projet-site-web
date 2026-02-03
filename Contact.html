@@ -6,19 +6,58 @@
     <title>Mon site web</title>
     <link rel="stylesheet" href="portfolio.css">
     <style>
-        h1{
-            text-align: center;
-            font-weight: bold;
-        }
-        form{
-            text-align: center;
-        }
-        .champ{
-            width: 300px;
-            height: 40px;
+    body {
+        padding: 15px;
+        font-family: Arial, sans-serif;
+    }
 
-        }
-    </style>
+    h1 {
+        text-align: center;
+        font-weight: bold;
+    }
+
+    form {
+        text-align: center;
+        max-width: 500px; /* Empêche le formulaire d'être trop large sur PC */
+        margin: 0 auto;   /* Centre le formulaire */
+    }
+
+    /* Style pour tous les champs de saisie */
+    .sais {
+        width: 100%;      /* Prend toute la largeur disponible sur mobile */
+        max-width: 400px; /* Mais ne dépasse pas 400px sur grand écran */
+        height: 40px;
+        margin-bottom: 15px;
+        box-sizing: border-box; /* Très important : inclut le padding dans la largeur */
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    /* Style spécifique pour le message (textarea) */
+    textarea.sais {
+        height: 100px;    /* Plus haut pour le message */
+        vertical-align: middle;
+    }
+
+    /* Le bouton de validation */
+    .bout {
+        width: 100%;
+        max-width: 200px;
+        padding: 10px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    /* Style pour le menu en haut */
+    #menu-deroulant {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+</style>
     </head>
     <body>
         <div class="bod">
@@ -55,4 +94,5 @@
             <br>
         </form>
     </body>
+
 </html>
