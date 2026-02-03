@@ -4,6 +4,22 @@
     <meta charset="UTF-8">
     <title>Mes Compétences Techniques</title>
     <style>
+        @media (max-width: 768px) {
+    .container {
+        margin: 10px; /* Réduit l'espace autour du bloc blanc */
+        padding: 15px; /* Réduit l'espace interne */
+        width: auto;   /* Permet au container de s'adapter */
+    }
+    
+
+    h1 {
+        font-size: 1.5rem; /* Titre un peu plus petit sur mobile */
+    }
+
+    .competence-list {
+        justify-content: center; /* Centre les badges sur mobile */
+    }
+}
         body {
             font-family: Arial, sans-serif;
             background: #f6f6f6;
@@ -38,12 +54,34 @@
             flex-wrap: wrap;
             gap: 13px;
         }
+        .competence-item:hover {
+    background: #2980b9;
+    color: white;
+    transition: 0.3s;
+    transform: translateY(-2px); /* Soulève légèrement le badge */
+}
         .competence-item {
             background: #ecf0f1;
             border-radius: 6px;
             padding: 9px 18px;
             font-size: 1em;
         }
+        #menu-deroulant {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 25px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px; /* Taille idéale pour éviter le zoom automatique sur iPhone */
+    background-color: #fff;
+}
+
+.bod label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #2c3e50;
+}
     </style>
 </head>
 <body>
@@ -105,4 +143,5 @@
         </div>
     </div>
 </body>
+
 </html>
