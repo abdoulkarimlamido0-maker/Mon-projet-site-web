@@ -3,113 +3,165 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mes Compétences Techniques</title>
+    <title>Mes Compétences - Portfolio</title>
     <style>
+        /* Styles de base pour la fluidité */
         body {
-            font-family: Arial, sans-serif;
-            background: #f6f6f6;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f0f2f5;
             margin: 0;
-            padding: 0;
+            padding: 15px; /* Petit espacement sur les bords pour mobile */
         }
+
         .container {
             max-width: 800px;
-            margin: 20px auto;
-            background: #fff;
-            border-radius: 10px;
+            margin: 0 auto;
+            background: white;
             padding: 20px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
         }
+
         h1 {
             color: #2c3e50;
             text-align: center;
-            margin-bottom: 20px;
+            font-size: 1.8rem; /* Taille adaptée mobile */
         }
+
+        /* Menu de navigation */
         #menu-deroulant {
             width: 100%;
             padding: 12px;
             margin-bottom: 25px;
+            border-radius: 8px;
             border: 1px solid #ccc;
-            border-radius: 5px;
             font-size: 16px;
-            background-color: #fff;
-        }
-        .competence-section {
-            margin-bottom: 25px;
-        }
-        .competence-section h2 {
-            font-size: 1.3em;
-            color: #2980b9;
-            border-bottom: 1px solid #eee;
-            padding-bottom: 5px;
-            margin-bottom: 12px;
-        }
-        .competence-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 13px;
-        }
-        .competence-item {
-            background: #ecf0f1;
-            border-radius: 6px;
-            padding: 9px 18px;
-            font-size: 1em;
-            transition: 0.3s;
-        }
-        .competence-item:hover {
-            background: #2980b9;
-            color: white;
-            transform: translateY(-2px);
         }
 
-        /* Responsive */
-        @media (max-width: 768px) {
-            .container { margin: 10px; padding: 15px; }
+        /* Sections de compétences */
+        .skill-section {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #2980b9;
+            font-size: 1.3rem;
+            border-left: 5px solid #2980b9;
+            padding-left: 10px;
+            margin-bottom: 15px;
+        }
+
+        /* Grille flexible pour les badges */
+        .skill-list {
+            display: flex;
+            flex-wrap: wrap; /* Permet le retour à la ligne automatique */
+            gap: 10px; /* Espace entre les badges */
+        }
+
+        .skill-item {
+            background-color: #e8f4fd;
+            color: #2980b9;
+            padding: 10px 15px;
+            border-radius: 50px; /* Forme pilule */
+            font-weight: 500;
+            font-size: 0.9rem;
+            border: 1px solid #d1e9f9;
+            transition: all 0.3s ease;
+        }
+
+        .skill-item:hover {
+            background-color: #2980b9;
+            color: white;
+            transform: translateY(-3px);
+        }
+
+        /* Certifications */
+        .certif-item {
+            background-color: #fdf2e9;
+            color: #e67e22;
+            border: 1px solid #fae5d3;
+        }
+
+        /* Ajustements spécifiques pour très petits écrans */
+        @media (max-width: 480px) {
+            body { padding: 10px; }
+            .container { padding: 15px; }
             h1 { font-size: 1.5rem; }
-            .competence-list { justify-content: center; }
+            .skill-item {
+                flex-grow: 1; /* Les badges prennent toute la largeur si nécessaire */
+                text-align: center;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="bod">
-            <label for="menu-deroulant"><strong>Aller vers :</strong></label>
-            <select id="menu-deroulant" onchange="if(this.value)window.location.href=this.value">
-                <option value="">-- Choisissez une page --</option>
-                <option value="index.html">Accueil</option>
-                <option value="CV.html">À propos de moi</option>
-                <option value="Services.html">Services</option>
-                <option value="Portfolio.html">Portfolio</option>
-                <option value="competences.html">Compétences</option>
-                <option value="Agenda.html">Mon agenda</option>
-                <option value="Contact.html">Contact</option>
-            </select>
-        </div>
 
-        <h1>Mes Compétences Techniques</h1>
+<div class="container">
+    <div class="bod">
+        <label for="menu-deroulant"><strong>Menu :</strong></label>
+        <select id="menu-deroulant" onchange="if(this.value)window.location.href=this.value">
+            <option value="">-- Navigation --</option>
+            <option value="index.html">Accueil</option>
+            <option value="CV.html">À propos</option>
+            <option value="Services.html">Services</option>
+            <option value="Portfolio.html">Portfolio</option>
+            <option value="skills.html" selected>Compétences</option>
+            <option value="Agenda.html">Agenda</option>
+            <option value="Contact.html">Contact</option>
+        </select>
+    </div>
 
-        <div class="competence-section">
-            <h2>Langages de Programmation</h2>
-            <div class="competence-list">
-                <div class="competence-item">Python</div>
-                <div class="competence-item">Java</div>
-                <div class="competence-item">C/C++</div>
-                <div class="competence-item">JavaScript</div>
-                <div class="competence-item">PHP</div>
-                <div class="competence-item">SQL</div>
-                <div class="competence-item">HTML/CSS</div>
-            </div>
-        </div>
+    <h1>Compétences Techniques</h1>
 
-        <div class="competence-section">
-            <h2>Frameworks & Outils</h2>
-            <div class="competence-list">
-                <div class="competence-item">Django</div>
-                <div class="competence-item">React</div>
-                <div class="competence-item">Docker</div>
-                <div class="competence-item">Git & GitHub</div>
-            </div>
+    <div class="skill-section">
+        <h2>Langages de Programmation</h2>
+        <div class="skill-list">
+            <div class="skill-item">Python</div>
+            <div class="skill-item">Java</div>
+            <div class="skill-item">C / C++</div>
+            <div class="skill-item">JavaScript</div>
+            <div class="skill-item">PHP</div>
+            <div class="skill-item">SQL</div>
+            <div class="skill-item">HTML5 & CSS3</div>
         </div>
     </div>
+
+    <div class="skill-section">
+        <h2>Frameworks & Bibliothèques</h2>
+        <div class="skill-list">
+            <div class="skill-item">Django</div>
+            <div class="skill-item">Flask</div>
+            <div class="skill-item">React.js</div>
+            <div class="skill-item">Bootstrap</div>
+            <div class="skill-item">Node.js</div>
+            <div class="skill-item">Pandas / NumPy</div>
+        </div>
+    </div>
+
+    <div class="skill-section">
+        <h2>Outils & Technologies</h2>
+        <div class="skill-list">
+            <div class="skill-item">Git & GitHub</div>
+            <div class="skill-item">Docker</div>
+            <div class="skill-item">Linux (Ubuntu/Kali)</div>
+            <div class="skill-item">VS Code</div>
+            <div class="skill-item">Figma</div>
+            <div class="skill-item">Postman</div>
+        </div>
+    </div>
+
+    <div class="skill-section">
+        <h2>Certifications</h2>
+        <div class="skill-list">
+            <div class="skill-item certif-item">Cisco Cybersecurity</div>
+            <div class="skill-item certif-item">Google Data Analytics</div>
+            <div class="skill-item certif-item">FreeCodeCamp Responsive Web</div>
+        </div>
+    </div>
+</div>
+
 </body>
 </html>
+
 
